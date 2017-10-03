@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
     # 結果出力
     for i, data in enumerate(top5):
-        print("{0}。名前：{2} / 確率：{1:.5}%".format(i + 1, data[0] * 100, data[1]))
+        print("{0}. 名前：{2} / 確率：{1:.5}%".format(i + 1, data[0] * 100, data[1]))
 
     print("実行時間：{:.3f}秒".format(t2 - t1))
     
