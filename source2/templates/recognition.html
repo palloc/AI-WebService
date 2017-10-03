@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>画像識別サービス</title>
+	<link rel="stylesheet" href={{ static_url("style.css") }}>
+    </head>
+    <body>
+	<header>
+	    <h1>画像識別サービス</h1>
+	</header>
+	<div id="container">
+	    <div id="contents">
+		<h2>画像の識別結果</h2>
+		<p>あなたのアップロードした画像を識別した結果、以下のようになりました。</p>
+		<ul>
+		    {% for prob in probs %}
+		    <li>{{ prob }}</li>
+		    {% end %}
+		</ul>
+	    </div>
+	</div>
+	<footer>
+	    <a href="/">トップページへ戻る</a>
+	</footer>
+    </body>
+</html>
